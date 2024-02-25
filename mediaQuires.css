@@ -1,0 +1,277 @@
+@media screen and (max-width: 1690px) {
+    #userIcon{
+        padding: .2rem .9rem;
+        font-size: 1.3rem;
+    }
+
+    .main_container{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 1.5rem;
+        padding: .5rem .5rem;
+    }
+
+    .container16{
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1417px) {
+    .header{
+        grid-template-columns: 20% 60% 20%; 
+    }
+
+    .divHeader1{
+        padding-left: 1rem ;
+        gap: .7rem;
+    }
+
+    .divHeader2 > input{
+        width: 60%;
+    }
+
+    .side_navbar{
+        width: fit-content; 
+    }
+
+    .side_navbar > div:not(.navbar1, .navbar2, .navbar3, .navbar5){
+        display: none;
+        
+    }
+
+    .side_navbar > div{
+        padding: .5rem;
+        gap: .5rem;
+        flex-direction: column;
+    }
+
+    .side_navbar > div > i{
+        font-size: 1.2rem;
+    }
+
+    .side_navbar > div >p{
+        font-size: .8rem;
+        margin: .2rem;
+        font-family: sans-serif; 
+        display: inline;  
+    }
+
+    hr{
+        display: none;
+    }
+
+    .main_container{
+        width: 100%;
+        margin-left: 8%;
+        padding: .5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }   
+
+    .main_container > a > div {
+        height: fit-content;
+        word-wrap: break-word;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 1313px) {
+    .divHeader1{
+        padding-left: 1.6rem ;
+    }
+
+    .divHeader2 > input{
+        width: 67%;
+    }
+
+    .divHeader3{
+        gap: .5rem;
+    }
+    
+    #createIcon, #notificationIcon{
+        font-size: 1.5rem;
+    }
+
+    #userIcon{
+        padding: .2rem .9rem;
+        font-size: 1.3rem;
+     
+    }
+
+    .main_container{
+        width: 100%;
+        margin-left: 8%;
+        padding: .5rem 1rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }   
+    
+    .container16{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1081px) {
+    .divHeader1{
+        padding-left: 1.2rem ;
+        gap: .7rem;
+    }
+
+    .fa-solid.fa-bars{
+        font-size: 1.4rem;
+    }
+
+    .divHeader1-div > img{
+        width: 28px;
+    }
+    
+    .divHeader1-div > p{
+        font-size: 1.2rem;
+    }
+    
+    .divHeader1-div > span{
+        font-size: .6rem;
+        color: hsl(0, 0%, 80%);
+        letter-spacing: .1rem;
+        margin-bottom: .8rem;
+    }
+
+    .divHeader2 > input{
+        width: 70%;
+        font-size: 1rem;
+        padding: .6rem 1rem .6rem;
+    }
+
+    .side_navbar > div{
+        padding: .5rem;
+        gap: .2rem;
+    }
+
+    .side_navbar > div >img{
+        width: 19px;
+    }
+
+    .side_navbar > div >p{
+        font-size: .7rem;
+    }
+
+    .main_container{
+        width: 100%;
+        margin-left: 8%;
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }   
+
+    .container16{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 1011px) {
+    .header{
+        grid-template-columns: 25% 55% 20%; 
+    }
+
+    .divHeader2 > input{
+        width: 80%;
+    }
+
+}
+
+@media screen and (max-width: 846px) {
+    .side_navbar{
+        width: 100%;  
+        height: fit-content;
+        padding: .2rem 0;  
+        position: fixed;
+        bottom: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+    }
+
+    .fa-solid.fa-bars{
+        display: none;
+    }
+
+    .main_container{
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }   
+
+    .container16{
+        display: block;
+    }
+}
+
+
+@media screen and (max-width: 743px) {
+    .header{
+        grid-template-columns: 25% 60% 15%; 
+    }
+
+    #createIcon, .tooltip3{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 644px) {
+    .divHeader2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .divHeader2 > input{
+        padding: .7rem 1rem .6rem;
+    }
+    
+    #micIcon, .tooltip2{
+        display: none;
+    }
+   
+}
+
+
+@media screen and (max-width: 588px) {
+    .header{
+        grid-template-columns: 65% 25% 10%; 
+    }
+
+    .divHeader2{
+        display: flex;
+        justify-content: end;
+        align-items: center;
+    }
+
+    .divHeader2 > input, #notificationIcon, .tooltip4{
+        display: none;
+    }
+
+    #searchIcon{
+        background-color: transparent;
+        padding: none;
+        border: none;
+        color: var(--main-color);
+        margin-right: 0;
+        font-size: 1.5rem;
+    }
+
+    .divHeader3{
+        justify-content: start;
+    }
+
+    .main_container{
+        width: 100%;
+        margin-left: 0;
+        padding: 1rem 2rem;
+        display: grid;
+        grid-template-columns: 1fr;
+    }   
+}

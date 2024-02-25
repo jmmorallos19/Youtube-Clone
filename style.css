@@ -1,0 +1,336 @@
+@import url('https://fonts.cdnfonts.com/css/youtube-sans?styles=108342,108337,108338,108339,108340,108341,108343,108349,108344,108345,108346,108347,108348,108350');
+
+body{
+    background-color: black;
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+*{
+    font-family: 'YouTube Sans', sans-serif;
+}
+
+:root{
+    --main-color:#fff;
+}
+
+.header{
+    width: 100%;
+    height: 3vh;
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: 15% 70% 15%; 
+    position: fixed;
+    z-index: 1;
+}
+
+.header > div{
+    display: flex; 
+    flex-direction: row;
+    background-color: black;
+}
+
+.divHeader1{
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 1.4rem ;
+    gap: 1.2rem;
+    font-weight: 100;
+    position: relative;
+}
+
+.fa-solid.fa-bars{
+    font-size: 1.4rem;
+    border-radius: 50%;
+    padding: .7rem .8rem;
+    cursor: pointer;
+}
+
+.fa-solid.fa-bars:hover{
+    background-color: rgba(114, 111, 111, 0.6);
+}
+
+.divHeader1-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.divHeader1-div > img{
+    width: 30px;
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+.divHeader1-div > p{
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin: 0;
+    cursor: pointer;
+}
+
+.divHeader1-div > span{
+    color: gray;
+    font-size: .7rem;
+    margin-bottom: .9rem;
+    font-family: sans-serif;
+    cursor: pointer;
+}
+
+.divHeader2{
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.divHeader2 > input{
+    width: 40%;
+    border: 1px solid gray;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    font-size: 1rem;
+    padding: .7rem 1rem .6rem;
+    background: transparent;
+    color: var(--main-color);
+    font-family: sans-serif;
+    outline: none;
+}
+
+.divHeader2 > input:focus{
+    border: 1px solid hsl(219, 94%, 51%)
+}
+
+#searchIcon{
+    background-color: rgba(80, 77, 77, .6);
+    font-size: 1.2rem;
+    padding: .4rem 1rem;
+    border: 1px solid gray;
+    color: var(--main-color);
+    border-left: none;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: .8rem;
+    cursor: pointer;
+}
+
+#micIcon{
+    font-size: 1.1rem;
+    background-color: rgba(80, 77, 77, .6);
+    color: var(--main-color);
+    border-radius: 50%;
+    border: none;
+    padding: .6rem .8rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#micIcon:hover{
+    background-color: rgba(136, 133, 133, 0.6);
+}
+
+.divHeader3{
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+    position: relative;
+}
+
+#createIcon, #notificationIcon{
+    color: var(--main-color);
+    padding: .1rem .4rem;
+    border: none;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 1.7rem;
+    transition: .2s;
+    cursor: pointer;
+}
+
+#createIcon:hover, #notificationIcon:hover{
+    background-color: rgba(136, 133, 133, 0.6);
+}
+
+#notificationIcon{
+    font-size: 1.5rem;
+    padding: .3rem .6rem;
+}
+
+#userIcon{
+    background-color: blueviolet;
+    padding: .2rem 1rem;
+    font-size: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.side_navbar{
+    width: fit-content;  
+    height: 90vh;
+    padding: .2rem 0;  
+    position: fixed;
+    margin-top: 90px;
+    overflow: auto;
+}
+
+.side_navbar::-webkit-scrollbar{
+    width: 10px;
+}
+
+.side_navbar::-webkit-scrollbar-thumb{
+    background-color: gray;
+    border-radius: 5px;
+}
+
+.side_navbar > div{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: .5rem 2rem;
+    border-radius: 10px;
+    cursor: pointer;
+ 
+}
+
+.side_navbar > div:hover{
+    background-color: rgb(44, 43, 43);
+}
+
+.side_navbar > div > i{
+    font-size: 1.5rem;
+}
+
+.side_navbar > div >p{
+    font-size: .9rem;
+    margin: .2rem;
+    font-family: sans-serif;   
+}
+
+.side_navbar > div >img{
+    width: 20px;
+    border-radius: 50%;
+}
+
+#home, #user, #like, #feedback{
+    border-radius: 0;
+}
+
+hr{
+    background-color: rgb(102, 99, 99);
+    margin: 1.5rem;
+}
+
+.main_container{
+    width: 100%;
+    margin-left: 15%;
+    margin-top: 90px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: .5rem 1rem;
+}
+
+.main_container > a{
+    text-decoration: none;
+    color: #fff;
+    
+}
+
+.main_container > a > div {
+    height: fit-content;
+    word-wrap: break-word;
+    cursor: pointer;
+}
+
+.main_container 
+> a > div > img{
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+    border-radius: 20px;
+    transition: .1s;
+}
+
+.main_container 
+> a > div > video{
+    width: 100%;
+    display: block;
+    margin-inline: auto;
+    border-radius: 20px;
+    transition: .1s;
+}
+
+.artist_info{
+    display: flex;
+}
+
+#img1{
+    float: left;
+    width: 40px;
+    border-radius: 50%;
+    margin: 1rem;
+}
+
+#img2{
+    width: 13px;
+    margin-left: .2rem;
+}
+
+#p1{
+    font-size: 1.1rem;
+    margin: .8rem 0 0;
+    line-height: 1.4rem;
+}
+
+#p2{
+    font-size: .9rem;
+    color: gray;
+    margin: .3rem 0 0;
+    font-family: sans-serif; 
+}
+
+#p3{
+    font-size: .9rem;
+    color: gray;
+    margin: .3rem 0 0;
+    font-family: sans-serif;
+}
+
+.tooltip1, .tooltip2, .tooltip3, .tooltip4{
+    background-color: rgba(73, 72, 72);
+    font-family: sans-serif;
+    padding: .5rem .7rem;
+    font-size: .8rem;
+    border-radius: 7px;
+    position: absolute;
+    transition: .2s;
+    bottom: -45%;
+    opacity: 0; 
+}
+
+.tooltip1{
+    right: 30%; 
+}
+
+.tooltip2{
+    right: 22%;
+}
+
+.tooltip3{
+    left: 24%;
+   
+}
+
+.tooltip4{
+    left: 32%;
+}
+
+.container16{
+    display: none;
+}
